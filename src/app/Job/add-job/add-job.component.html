@@ -45,6 +45,14 @@
               </label>
             </div>
           </div>
+          <div class="alert alert-danger" *ngIf="registerForm.get('msg').errors && registerForm.controls['msg'].touched">
+            <div *ngIf="registerForm.controls['msg'].hasError('required')">
+              Msg !
+            </div>
+            <div *ngIf="registerForm.controls['msg'].hasError('pattern')">
+              Form !
+            </div>
+          </div>
         </div>
         <label class="image-upload-container btn btn-bwm">
           <span>Select Image</span> CV :
@@ -52,7 +60,7 @@
         </label>
 
         <div class="card-footer">
-          <button class="btn btn--radius-2 btn--blue-2" type="submit" [disabled]="registerForm.invalid" (click)="add(imageInput)">Send Application</button>
+          <button class="btn btn--radius-2 btn--blue-2" type="submit" [disabled]="registerForm.invalid" (click)="add(imageInput)" routerLink="/home">Send Application</button>
         </div>
       </form>
     </div>

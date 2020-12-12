@@ -9,7 +9,7 @@
         <table>
           <app-post *ngFor="let p of postList" [posts]="p"  [idInput]="id">    </app-post>
         </table>
-        <button class="btn btn--blue" [routerLink]="['/addpost/']">AddPost</button>
+        <button *ngIf=" idd !== 0" class="btn btn--blue" [routerLink]="['/addpost/']">AddPost</button>
       </div>
     </div>
 

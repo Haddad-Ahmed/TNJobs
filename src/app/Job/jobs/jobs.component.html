@@ -18,7 +18,7 @@
 </head>
 
 <body>
-<div *ngIf=" titleInput=='' || jobs.name==titleInput">
+<div *ngIf=" titleInput=='' || jobs.name.toLowerCase().includes(titleInput.toLowerCase())">
   <div class="card">
     <img [src]="jobs.img" class="card-img-top" alt="img">
     <div class="card-body">

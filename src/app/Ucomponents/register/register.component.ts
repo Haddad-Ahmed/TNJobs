@@ -32,7 +32,6 @@ export class RegisterComponent implements OnInit {
       email: new FormControl('', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]),
       sexe: new FormControl('', [Validators.required]) ,
       type: new FormControl('', [Validators.required])  ,
-      img: new FormControl('', [Validators.required])  ,
   });
   }
   add(){

@@ -8,8 +8,8 @@
         <div class="text-content">
           <h3>Welcome To TNJobs</h3>
           <h5>LOOKING FOR A JOB ?</h5>
-          <a href="#" class="main-stroked-button">Learn More</a>
-          <a href="#" class="main-filled-button">Search Now</a>
+          <a href="#" class="main-stroked-button" routerLink="/other">Contact</a>
+          <a href="#" class="main-filled-button" routerLink="/jobs">Search Now</a>
         </div>
       </div>
     </div>
@@ -126,12 +126,12 @@
             <div class="col-lg-9">
               <form>
                 <div class="form-group">
-                  <label>Search Titre</label>
+                  <label>Search Title</label>
                   <input type="text" [(ngModel)]="Title" name="Title" class="form-control">
                 </div>
               </form>
               <h2>JobsList</h2>
-              <div class="col" style="width: min-content; display: flex;">
+              <div class="col" style="width: min-content; display: flex; overflow: scroll">
               <app-jobs *ngFor="let J of jobList" [jobs]="J" [titleInput]="Title">    </app-jobs>
               </div>
             </div>

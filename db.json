@@ -4,7 +4,7 @@
       "namef": "haddad",
       "names": "ahmed",
       "password": "3abdou",
-      "email": "ahmed.haddad@eee.org",
+      "email": "ahmed.haddad@ieee.org",
       "type": "Hirer",
       "role": "admin",
       "likes": 20,
@@ -12,10 +12,10 @@
       "id": 1
     },
     {
-      "namef": "Test",
-      "names": "sscc",
+      "namef": "test1",
+      "names": "Test",
       "password": "test",
-      "email": "tee@ee.org",
+      "email": "test@tets.tn",
       "type": "Hirer",
       "role": "user",
       "likes": 20,
@@ -23,46 +23,64 @@
       "id": 2
     },
     {
-      "namef": "aaaa",
-      "names": "dddd",
-      "password": "123",
-      "email": "aa@esp.tn",
+      "namef": "Test2",
+      "names": "test",
+      "password": "test",
+      "email": "test2@esprit.tn",
       "type": "Employe",
       "img": "../../../assets/images/user.png",
       "id": 3
+    },
+    {
+      "namef": "Dhia",
+      "names": "Mnasser",
+      "password": "test",
+      "email": "dhia@esprit.tn",
+      "type": "Employe",
+      "img": "../../../assets/images/user.png",
+      "id": 4
+    },
+    {
+      "namef": "Mohamed",
+      "names": "Khrouf",
+      "password": "test",
+      "email": "khrouf@esprit.tn",
+      "type": "Employe",
+      "img": "../../../assets/images/user.png",
+      "id": 5
     }
   ],
   "posts": [
     {
-      "name": "test",
+      "name": "Post2020",
       "jobid": 1,
-      "mail": "teee@ieee.org",
-      "msg": "heloo",
+      "mail": "post1@ieee.org",
+      "msg": "I want this job",
       "cv": "../../../assets/images/cv.png",
       "id": 1
     },
     {
-      "name": "heee",
+      "name": "Posttest",
       "jobid": 1,
-      "mail": "ee@iee.org",
-      "msg": "waa",
+      "mail": "test@test.tn",
+      "msg": "test",
       "cv": "../../../assets/images/cv.png",
       "id": 2
     },
     {
       "name": "haddad",
       "mail": "haddad@esprit.tn",
-      "msg": "1",
-      "jobid": "1",
+      "msg": "have experience",
+      "jobid": 1,
       "link": "test",
       "cv": "../../../assets/images/cv.png",
       "id": 3
     },
     {
-      "name": "test",
-      "mail": "test@teste.tn",
-      "msg": "1",
-      "jobid": "1",
+      "name": "Post3",
+      "mail": "post3@ieee.tn",
+      "msg": "Please and thanks",
+      "jobid": 2,
       "link": "link",
       "cv": "../../../assets/images/cv.png",
       "id": 4
@@ -70,51 +88,51 @@
   ],
   "jobs": [
     {
-      "name": "test",
-      "mail": "teee@ieee.org",
-      "msg": "heloo",
+      "name": "job12",
+      "mail": "job@job.job",
+      "msg": "Designer is what we need",
       "img": "../../../assets/images/ent.jpg",
       "id": 1
     },
     {
-      "name": "heee",
-      "mail": "ee@iee.org",
-      "msg": "waa",
+      "name": "Job2",
+      "mail": "job2@ieee.org",
+      "msg": "Web Dev",
       "img": "../../../assets/images/ent.jpg",
       "id": 2
     },
     {
-      "name": "heee",
-      "mail": "ee@iee.org",
-      "msg": "waa",
+      "name": "Employ1",
+      "mail": "emp1@ieee.org",
+      "msg": "Send your cv",
       "img": "../../../assets/images/ent.jpg",
       "id": 3
     },
     {
       "name": "test2",
-      "mail": "tes@test.org",
-      "msg": "test",
+      "mail": "test2@test.org",
+      "msg": "Post here",
       "img": "../../../assets/images/ent.jpg",
       "id": 4
     },
     {
-      "name": "test2",
-      "mail": "tes@test.org",
-      "msg": "test",
+      "name": "test3",
+      "mail": "test3@test.org",
+      "msg": "Test",
       "img": "../../../assets/images/ent.jpg",
       "id": 5
     },
     {
-      "name": "test2",
-      "mail": "tes@test.org",
-      "msg": "test",
+      "name": "Test200",
+      "mail": "devnet@test.org",
+      "msg": "Only for Dev",
       "img": "../../../assets/images/ent.jpg",
       "id": 6
     },
     {
-      "name": "test2",
-      "mail": "tes@test.org",
-      "msg": "test",
+      "name": "Paldins",
+      "mail": "paladins@test.org",
+      "msg": "Paldins entreprise is the best !",
       "img": "../../../assets/images/ent.jpg",
       "id": 7
     }

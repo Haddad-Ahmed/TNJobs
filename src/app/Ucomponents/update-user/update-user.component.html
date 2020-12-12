@@ -6,7 +6,7 @@
     <input [placeholder]="user.namef" type="text" name="namef" class="form-control" [(ngModel)]="user.namef" #i="ngModel" required>
   </div>
   <div class="alert alert-danger" *ngIf="i.invalid && i.touched">
-    id is required
+    name is required
   </div>
   <div class="form-group">
     <label>UserName</label>

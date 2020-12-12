@@ -24,7 +24,7 @@
         <td> <a [routerLink]="['/profil/',j.id]" class="btn btn-success">
           detail
         </a></td>
-        <td> <a [routerLink]="['/updatejob/'+ j.id]" class="btn btn-warning">
+        <td> <a [routerLink]="['/updateuser/'+ j.id]" class="btn btn-warning">
           Modify
         </a></td>
         <td> <a  (click)="deleteUser(j)" class="btn btn-danger">
@@ -33,7 +33,7 @@
       </tr>
       </tbody>
     </table>
-    <button class="btn btn-outline-light" [routerLink]="['/subscribe/']">AddUser</button>
+    <button class="btn btn-outline-light" [routerLink]="['/register/']">AddUser</button>
 
   </div>
 </div>

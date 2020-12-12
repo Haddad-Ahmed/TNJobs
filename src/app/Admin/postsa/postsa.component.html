@@ -16,10 +16,10 @@
         <td>{{j.name}}</td>
         <td>{{j.msg}}</td>
         <td>{{j.mail}}</td>
-        <td> <a [routerLink]="['/post/',j.id]" class="btn btn-success">
+        <td> <a [routerLink]="['/home/post/',j.id]" class="btn btn-success">
           detail
         </a></td>
-        <td> <a [routerLink]="['/updatejob/'+ j.id]" class="btn btn-warning">
+        <td> <a [routerLink]="['/updatepost/'+ j.id]" class="btn btn-warning">
           Modify
         </a></td>
         <td> <a  (click)="deletePost(j)" class="btn btn-danger">

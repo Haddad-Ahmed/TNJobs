@@ -33,8 +33,6 @@ export class AddJobComponent implements OnInit {
       name: new FormControl('', [Validators.required, Validators.minLength(3)]),
       mail: new FormControl('', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]),
       msg: new FormControl('', [Validators.required]),
-      jobid: new FormControl('', [Validators.required]),
-      link: new FormControl('', [Validators.required]),
     });
   }
   add(imageInput){

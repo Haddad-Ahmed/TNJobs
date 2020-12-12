@@ -1,5 +1,5 @@
-<p>update-post works!</p>
-
+<div class="page-wrapper p-t-100 p-b-50" style="background-image: url(assets/images/slide-02.jpg) ;">
+  <div class="wrapper wrapper--w900">
 <form #f="ngForm">
   <div class="form-group">
     <label>Name</label>
@@ -25,5 +25,7 @@
     <label>MSG</label>
     <input [placeholder]="post.msg" type="text" name="msg" class="form-control" [(ngModel)]="post.msg">
   </div>
-  <button class="btn btn-success" [disabled]="f.invalid" (click)="save()" routerLink="/other">save</button>
+  <button class="btn btn-success" [disabled]="f.invalid" (click)="save()" routerLink="/home">save</button>
 </form>
+  </div>
+</div>

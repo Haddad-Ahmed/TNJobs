@@ -1,6 +1,6 @@
 <div class="page-wrapper p-t-200 p-b-150" style="background-image: url(assets/images/slide-02.jpg) ;">
   <div class="wrapper wrapper--w100" style="padding: 7rem">
-    <h2 style="background: white">List of Jobs</h2>  <button class="btn btn--blue" [routerLink]="['/addjob/']">AddJob</button>
+    <h2 style="background: white">List of Jobs</h2>  <button *ngIf=" id !== 0" class="btn btn--blue" [routerLink]="['/addjob/']">AddJob</button>
     <input type="search" id="site-search" name="searchinput"
            aria-label="Search through site content" [(ngModel)]="searchinput" style="margin: 3px; width: 10%" >
     <button class="btn btn--blue-2" (click)="search()">Search</button>
@@ -14,9 +14,6 @@
         <button class="btn btn--blue" [routerLink]="['/home/job/',job.id]"> Details </button>
       </div> &nbsp;&nbsp;
     </div>
-
-
   </div>
-
 </div>
 

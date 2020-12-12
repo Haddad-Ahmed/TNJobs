@@ -74,21 +74,10 @@
                 </label>
                 &nbsp;
                 <label class="radio inline">
-                  <input type="radio" name="type" formControlName="type" value="Hiree" [(ngModel)]="user.type" required>
+                  <input type="radio" name="type" formControlName="type" value="Hirer" [(ngModel)]="user.type" required>
                   <span> Hiree </span>
                 </label>
               </div>
-              <!--
-              <div class="form-row">
-                <div class="name" style="color: white">Upload Image :&nbsp;&nbsp; </div>
-                <div class="value">
-                  <div class="input-group js-input-file">
-                    <input class="input-file" type="file" name="file_img" id="file">
-                    <label class="label--file" for="file">Choose file</label>
-                    <span class="input-file__info">No file chosen</span>
-                  </div>
-                </div>
-              </div>   -->
             <div class="form-group">
               <input type="submit" class="btnSubmit" value="Register" [disabled]="registerForm.invalid" (click)="add()" />
             </div>
