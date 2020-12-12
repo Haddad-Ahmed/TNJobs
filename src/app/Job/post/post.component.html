@@ -22,7 +22,7 @@
 
 
       <div *ngIf="posts.jobid == idInput">
-        <h5>{{posts.id}} : {{posts.name}} {{posts.mail}} <button class="btn btn-warning" [routerLink]="['/post/'+posts.id]">View</button></h5>
+        <h5>ID:{{posts.id}} -> Name: {{posts.name}} Mail: {{posts.mail}} <button class="btn btn-warning" [routerLink]="['/home/post/'+posts.id]">View</button></h5>
       </div>
 
 

@@ -4,24 +4,25 @@
 
 <div class="page-wrapper p-t-100 p-b-50">
   <div class="wrapper wrapper--w1500" style="padding: 7rem">
-    <label for="site-search">Search the site:</label>
+    <label for="site-search" style="background: white">Search in the site:</label>
     <input type="search" id="site-search" name="searchinput"
            aria-label="Search through site content" [(ngModel)]="searchinput">
-    <button class="btn-dark" (click)="search()">Search</button>
+    <button class="btn btn-light" (click)="search()" style="margin: 5px">Search</button>
+    <button class="btn btn-light" (click)="number()" style="margin: 5px">Number</button>
     <div class="gallery-menu text-center row">
       <div class="col-md-12">
-        <div class="button-group filter-button-group">
-          <button class="btn-dark" [class]="actAll"  (click)="all()">All</button>
-          <button class="btn-dark" [class]="actHirer"  (click)="hirer()">Hirer</button>
-          <button class="btn-dark" [class]="actEmploye" (click)="employe()">Employe </button>
+        <div>
+          <button class="btn btn-light"  style="margin: 5px" [class]="actAll"  (click)="all()">All</button>
+          <button class="btn btn-light" style="margin: 5px" [class]="actHirer"  (click)="hirer()">Hirer</button>
+          <button class="btn btn-light" style="margin: 5px" [class]="actEmploye" (click)="employe()">Employe </button>
         </div>
       </div>
       <br>
-        <table id="customers">
-          <thead>
+        <table class="table">
+          <thead class="thead-light">
           <tr><th>Id</th><th>FirstName</th><th>SecondName</th><th>Email</th><th>Role</th></tr>
           <tbody  *ngFor="let user of usersList" >
-          <tr style="background: white" *ngIf=" a || (user.type === categ)" >
+          <tr style="background: white" *ngIf=" a || (user.type === categ)">
             <td>{{user.id}}</td>
             <td>{{user.namef}}</td>
             <td>{{user.names}}</td>

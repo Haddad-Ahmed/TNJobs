@@ -19,6 +19,7 @@ import {PostsaComponent} from './Admin/postsa/postsa.component';
 import {UsersaComponent} from './Admin/usersa/usersa.component';
 import {UpdatePostComponent} from './Job/update-post/update-post.component';
 import {UpdateJobComponent} from './Job/update-job/update-job.component';
+import {DetailPostComponent} from './Job/detail-post/detail-post.component';
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
@@ -33,6 +34,7 @@ const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'contactus', component: ContactusComponent},
   {path: 'home/job/:id', component: DetailJobComponent},
+  {path: 'home/post/:id', component: DetailPostComponent},
   {path: 'updateuser/:id', component: UpdateUserComponent},
   {path: 'updatepost/:id', component: UpdatePostComponent},
   {path: 'updatejob/:id', component: UpdateJobComponent},

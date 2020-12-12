@@ -20,7 +20,7 @@
             Mail !
           </div>
           <div *ngIf="loginForm.controls['email'].hasError('pattern')">
-            Message Pattern
+            Error !
           </div>
         </div>
         <div class="form-group">
@@ -31,7 +31,7 @@
             Password !
           </div>
           <div *ngIf="loginForm.controls['password'].hasError('minlength')">
-            Message Pattern
+            Error !
           </div>
         </div>
         <div class="form-group">

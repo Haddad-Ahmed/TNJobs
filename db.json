@@ -8,16 +8,18 @@
       "type": "Hirer",
       "role": "admin",
       "likes": 20,
+      "img": "../../../assets/images/user.png",
       "id": 1
     },
     {
-      "namef": "testt",
-      "names": "ss",
-      "password": "sssss",
+      "namef": "Test",
+      "names": "sscc",
+      "password": "test",
       "email": "tee@ee.org",
       "type": "Hirer",
       "role": "user",
       "likes": 20,
+      "img": "../../../assets/images/user.png",
       "id": 2
     },
     {
@@ -26,6 +28,7 @@
       "password": "123",
       "email": "aa@esp.tn",
       "type": "Employe",
+      "img": "../../../assets/images/user.png",
       "id": 3
     }
   ],
@@ -35,6 +38,7 @@
       "jobid": 1,
       "mail": "teee@ieee.org",
       "msg": "heloo",
+      "cv": "../../../assets/images/cv.png",
       "id": 1
     },
     {
@@ -42,6 +46,7 @@
       "jobid": 1,
       "mail": "ee@iee.org",
       "msg": "waa",
+      "cv": "../../../assets/images/cv.png",
       "id": 2
     },
     {
@@ -50,7 +55,7 @@
       "msg": "1",
       "jobid": "1",
       "link": "test",
-      "cv": "C:\\fakepath\\Daco_1409324.png",
+      "cv": "../../../assets/images/cv.png",
       "id": 3
     },
     {
@@ -59,7 +64,7 @@
       "msg": "1",
       "jobid": "1",
       "link": "link",
-      "cv": "C:\\fakepath\\received_812653306182603.jpg",
+      "cv": "../../../assets/images/cv.png",
       "id": 4
     }
   ],
@@ -68,42 +73,49 @@
       "name": "test",
       "mail": "teee@ieee.org",
       "msg": "heloo",
+      "img": "../../../assets/images/ent.jpg",
       "id": 1
     },
     {
       "name": "heee",
       "mail": "ee@iee.org",
       "msg": "waa",
+      "img": "../../../assets/images/ent.jpg",
       "id": 2
     },
     {
       "name": "heee",
       "mail": "ee@iee.org",
       "msg": "waa",
+      "img": "../../../assets/images/ent.jpg",
       "id": 3
     },
     {
       "name": "test2",
       "mail": "tes@test.org",
       "msg": "test",
+      "img": "../../../assets/images/ent.jpg",
       "id": 4
     },
     {
       "name": "test2",
       "mail": "tes@test.org",
       "msg": "test",
+      "img": "../../../assets/images/ent.jpg",
       "id": 5
     },
     {
       "name": "test2",
       "mail": "tes@test.org",
       "msg": "test",
+      "img": "../../../assets/images/ent.jpg",
       "id": 6
     },
     {
       "name": "test2",
       "mail": "tes@test.org",
       "msg": "test",
+      "img": "../../../assets/images/ent.jpg",
       "id": 7
     }
   ]

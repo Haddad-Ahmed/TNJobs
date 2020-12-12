@@ -208,7 +208,7 @@ button {
    ========================================================================== */
 .page-wrapper {
   min-height: 100vh;
-  background-image: url(src/assets/images/slide-02.jpg);
+  background-image: url(../../../assets/images/slide-02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -216,10 +216,6 @@ button {
   overflow: hidden;
   position: relative;
   text-align: center
-}
-.card {
-  margin: 2rem;
-  padding: 2rem;
 }
 
 body {
@@ -420,10 +416,6 @@ h6 {
 
 .btn--green:hover {
   background: #4dae3c;
-}
-
-.cardt {
-  justify-content: center;
 }
 
 .btn--blue {

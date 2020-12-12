@@ -1,7 +1,7 @@
 <div class="page-wrapper p-t-100 p-b-50" style="background-image: url(assets/images/slide-02.jpg) ;">
   <div class="wrapper wrapper--w900" *ngFor="let j of jobList">
     <div class="card mb-4" *ngIf="j.id==id">
-      <img class="card-img-top" src="../../assets/images/ent.jpg" alt="Card image cap">
+      <img class="card-img-top" [src]="j.img" alt="Card image cap">
       <div class="card-body">
         <h3 class="card-title">{{j.id}} : {{j.name}}</h3>
         <p class="card-text">{{j.msg}}</p>

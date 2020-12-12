@@ -20,7 +20,7 @@
 <body>
 <div *ngIf=" titleInput=='' || jobs.name==titleInput">
   <div class="card">
-    <img src="../../assets/images/ent.jpg" class="card-img-top" alt="...">
+    <img [src]="jobs.img" class="card-img-top" alt="img">
     <div class="card-body">
       <h5 class="card-title">{{jobs.name}}</h5>
       <p class="card-text">message: {{jobs.msg}}</p>

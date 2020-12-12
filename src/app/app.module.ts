@@ -30,6 +30,7 @@ import { JobsaComponent } from './Admin/jobsa/jobsa.component';
 import { PostsaComponent } from './Admin/postsa/postsa.component';
 import { UpdateJobComponent } from './Job/update-job/update-job.component';
 import { UpdatePostComponent } from './Job/update-post/update-post.component';
+import { DetailPostComponent } from './Job/detail-post/detail-post.component';
 
 
 
@@ -59,7 +60,8 @@ import { UpdatePostComponent } from './Job/update-post/update-post.component';
     JobsaComponent,
     PostsaComponent,
     UpdateJobComponent,
-    UpdatePostComponent
+    UpdatePostComponent,
+    DetailPostComponent
   ],
   imports: [
     BrowserModule,

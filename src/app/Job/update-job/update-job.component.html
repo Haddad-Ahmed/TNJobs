@@ -4,11 +4,19 @@
 <form #f="ngForm">
   <div class="form-group">
     <label>Name</label>
-    <input [placeholder]="job.name" type="text" name="namef" class="form-control" [(ngModel)]="job.name" >
+    <input [placeholder]="job.name" type="text" name="namef" class="form-control" [(ngModel)]="job.name" #i="ngModel" required>
+  </div>
+  <div class="alert alert-danger" *ngIf="i.invalid && i.touched">
+    Name is required
   </div>
   <div class="form-group">
     <label>Mail</label>
-    <input [placeholder]="job.mail" type="text" name="names" class="form-control" [(ngModel)]="job.mail">
+    <input [placeholder]="job.mail" type="text" name="names" class="form-control" [(ngModel)]="job.mail" #m="ngModel" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$" minlength="3">
+  </div>
+  <div class="alert alert-danger" *ngIf="m.invalid && m.touched">
+    <div *ngIf="m.errors.required">Mail is required</div>
+    <div *ngIf="m.errors.minlength">Mail minlength is 3</div>
+    <div *ngIf="m.errors.pattern">Error</div>
   </div>
   <div class="form-group">
     <label>MSG</label>

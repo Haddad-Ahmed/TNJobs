@@ -30,7 +30,6 @@
           <div *ngIf=" userid() == undefined ">
             <ul class="nav">
               <li class="scroll-to-section"><a class="active" routerLink="/home">Home</a></li>
-              <li class="scroll-to-section"><a href="#about">About</a></li>
               <li class="scroll-to-section"><a routerLink="/jobs">Jobs</a></li>
               <li class="scroll-to-section"><a routerLink="/other">Contact</a></li>
               <li class="submenu">
@@ -38,7 +37,6 @@
                 <ul>
                   <li><a routerLink="/login">Login</a></li>
                   <li><a routerLink="/register">Register</a></li>
-                  <li><a routerLink="/addpost">Post</a></li>
                 </ul>
               </li>
               <li class="scroll-to-section"><a routerLink="/contactus">Contact Us</a></li>
@@ -52,7 +50,6 @@
             <div *ngIf=" userc.role == 'user'">
           <ul class="nav">
             <li class="scroll-to-section"><a class="active" routerLink="/home">Home</a></li>
-            <li class="scroll-to-section"><a href="#about">About</a></li>
             <li class="scroll-to-section"><a routerLink="/jobs">Jobs</a></li>
             <li class="scroll-to-section"><a routerLink="/other">Contact</a></li>
             <li class="submenu">

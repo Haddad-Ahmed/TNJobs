@@ -1,0 +1,40 @@
+<div class="page-wrapper p-t-100 p-b-50" style="background-image: url(assets/images/slide-02.jpg) ;">
+  <div class="wrapper wrapper--w900" *ngFor="let p of postList">
+    <div class="card mb-4" *ngIf="p.id==id">
+      <img class="card-img-top" [src]="p.cv" alt="Card image cap">
+      <div class="card-body">
+        <h3 class="card-title">{{p.id}} : {{p.name}}</h3>
+        <p class="card-text">{{p.msg}}</p>
+        <p class="card-text">{{p.mail}}</p>
+        <button class="btn btn--blue" [routerLink]="['/addpost/']">AddPost</button>
+      </div>
+    </div>
+
+    <!--
+      <div class="row" *ngFor="let j of jobList">
+
+        <div class="col-lg-4 col-md-6 mb-4" *ngIf="j.id==id">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="../../assets/images/ent.jpg"  alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">{{j.id}} : {{j.name}}</a>
+              </h4>
+              <h5>{{j.mail}}</h5>
+              <p class="card-text">{{j.msg}}</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+            <table>
+            <h1>Who post for this work ?</h1>
+            <app-post *ngFor="let p of postList" [posts]="p"  [idInput]="id">    </app-post>
+            </table>
+            <button class="btn btn--blue" [routerLink]="['/addpost/']">AddPost</button>
+          </div>
+        </div>
+
+    </div>-->
+  </div>
+</div>
+

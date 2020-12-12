@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {User} from '../../models/user';
 import {UserService} from '../../shared/user.service';
+import {ToastPackage, ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-users',
@@ -15,8 +16,9 @@ export class UsersComponent implements OnInit {
   actEmploye: string;
   usersList: User[] = null;
   searchinput: string;
+  n: number;
 
-  constructor(private userService: UserService) {
+  constructor(private userService: UserService, private toastr: ToastrService) {
   }
 
   ngOnInit(): void {
@@ -33,6 +35,11 @@ export class UsersComponent implements OnInit {
   search() {
     console.log(this.searchinput);
     this.userService.rechercheM(this.searchinput).subscribe(usersList => this.usersList = usersList);
+  }
+  number()
+  {
+    this.searchinput = '';
+    this.toastr.success('We have ' + this.usersList.length + ' members !');
   }
 
   // tslint:disable-next-line:typedef
