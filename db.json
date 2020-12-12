@@ -1,0 +1,110 @@
+{
+  "users": [
+    {
+      "namef": "haddad",
+      "names": "ahmed",
+      "password": "3abdou",
+      "email": "ahmed.haddad@eee.org",
+      "type": "Hirer",
+      "role": "admin",
+      "likes": 20,
+      "id": 1
+    },
+    {
+      "namef": "testt",
+      "names": "ss",
+      "password": "sssss",
+      "email": "tee@ee.org",
+      "type": "Hirer",
+      "role": "user",
+      "likes": 20,
+      "id": 2
+    },
+    {
+      "namef": "aaaa",
+      "names": "dddd",
+      "password": "123",
+      "email": "aa@esp.tn",
+      "type": "Employe",
+      "id": 3
+    }
+  ],
+  "posts": [
+    {
+      "name": "test",
+      "jobid": 1,
+      "mail": "teee@ieee.org",
+      "msg": "heloo",
+      "id": 1
+    },
+    {
+      "name": "heee",
+      "jobid": 1,
+      "mail": "ee@iee.org",
+      "msg": "waa",
+      "id": 2
+    },
+    {
+      "name": "haddad",
+      "mail": "haddad@esprit.tn",
+      "msg": "1",
+      "jobid": "1",
+      "link": "test",
+      "cv": "C:\\fakepath\\Daco_1409324.png",
+      "id": 3
+    },
+    {
+      "name": "test",
+      "mail": "test@teste.tn",
+      "msg": "1",
+      "jobid": "1",
+      "link": "link",
+      "cv": "C:\\fakepath\\received_812653306182603.jpg",
+      "id": 4
+    }
+  ],
+  "jobs": [
+    {
+      "name": "test",
+      "mail": "teee@ieee.org",
+      "msg": "heloo",
+      "id": 1
+    },
+    {
+      "name": "heee",
+      "mail": "ee@iee.org",
+      "msg": "waa",
+      "id": 2
+    },
+    {
+      "name": "heee",
+      "mail": "ee@iee.org",
+      "msg": "waa",
+      "id": 3
+    },
+    {
+      "name": "test2",
+      "mail": "tes@test.org",
+      "msg": "test",
+      "id": 4
+    },
+    {
+      "name": "test2",
+      "mail": "tes@test.org",
+      "msg": "test",
+      "id": 5
+    },
+    {
+      "name": "test2",
+      "mail": "tes@test.org",
+      "msg": "test",
+      "id": 6
+    },
+    {
+      "name": "test2",
+      "mail": "tes@test.org",
+      "msg": "test",
+      "id": 7
+    }
+  ]
+}

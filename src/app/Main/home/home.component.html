@@ -1,0 +1,247 @@
+<!-- ***** Main Banner Area Start ***** -->
+<div class="main-banner header-text" id="top">
+  <div class="Modern-Slider">
+    <!-- Item -->
+    <div class="item">
+      <div class="img-fill">
+        <img src="assets/images/slide-01.jpg" alt="">
+        <div class="text-content">
+          <h3>Welcome To TNJobs</h3>
+          <h5>LOOKING FOR A JOB ?</h5>
+          <a href="#" class="main-stroked-button">Learn More</a>
+          <a href="#" class="main-filled-button">Search Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="scroll-down scroll-to-section"><a href="#about"><i class="fa fa-arrow-down"></i></a></div>
+<!-- ***** Main Banner Area End ***** -->
+
+<!-- ***** Features Big Item Start ***** -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+        <div class="features-item">
+          <div class="features-icon">
+            <img src="assets/images/features-icon-1.png" alt="">
+          </div>
+          <div class="features-content">
+            <h4>Initial Work</h4>
+            <p>“When we strive to become better than we are, everything around us becomes better too.”.</p>
+            <a href="#" class="text-button-icon">
+              Learn More <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+        <div class="features-item">
+          <div class="features-icon">
+            <img src="assets/images/features-icon-1.png" alt="">
+          </div>
+          <div class="features-content">
+            <h4>Master Planning</h4>
+            <p>“Either you run the day or the day runs you.”.</p>
+            <a href="#" class="text-button-icon">
+              Learn More <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+        <div class="features-item">
+          <div class="features-icon">
+            <img src="assets/images/features-icon-1.png" alt="">
+          </div>
+          <div class="features-content">
+            <h4>Smooth Execution</h4>
+            <p>“I’m a greater believer in luck, and I find the harder I work the more I have of it.”.</p>
+            <a href="#" class="text-button-icon">
+              Learn More <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ***** Features Big Item End ***** -->
+
+<!-- ***** Features Big Item Start ***** -->
+<section class="section" id="subscribe">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <div class="section-heading">
+          <h6>Subscribe Newsletters</h6>
+          <h2>Don’t miss this chance!</h2>
+        </div>
+        <div class="subscribe-content">
+          <p>Find your work today ! let the game begin ! don't lose more Time searching .</p>
+          <div class="subscribe-form">
+            <form id="subscribe-now" action="" method="get">
+              <div class="row">
+                <div class="col-md-8 col-sm-12">
+                  <fieldset>
+                    <input name="email" type="text" id="email" placeholder="Enter your email..." required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="main-button">Subscribe Now</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ***** Features Big Item End ***** -->
+
+
+<!-- ***** Projects Area Starts ***** -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="section-heading">
+          <h6>Jobs</h6>
+          <h2>Some of our Jobs</h2>
+        </div>
+        <div class="filters">
+          <ul>
+            <li data-filter="*">All</li>
+            <li data-filter=".des">Web Design</li>
+            <li data-filter=".dev">Web Development</li>
+            <li data-filter=".gra">Graphics</li>
+            <li data-filter=".tsh">Others</li>
+          </ul>
+        </div>
+      </div>
+            <div class="col-lg-9">
+              <form>
+                <div class="form-group">
+                  <label>Search Titre</label>
+                  <input type="text" [(ngModel)]="Title" name="Title" class="form-control">
+                </div>
+              </form>
+              <h2>JobsList</h2>
+              <div class="col" style="width: min-content; display: flex;">
+              <app-jobs *ngFor="let J of jobList" [jobs]="J" [titleInput]="Title">    </app-jobs>
+              </div>
+            </div>
+          </div>
+  </div>
+</section>
+<!-- ***** Projects Area Ends ***** -->
+
+<!-- ***** Testimonials Starts ***** -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading">
+          <h6>Digital Team</h6>
+          <h2>young and talented members</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ***** Testimonials Ends ***** -->
+<!-- ***** About Area Starts ***** -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-xs-12">
+        <div class="left-text-content">
+          <div class="section-heading">
+            <h6>About Us</h6>
+            <h2>We work with top brands and startups</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <div class="service-item">
+                <img src="assets/images/service-item-01.png" alt="">
+                <h4>Top Notch</h4>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="service-item">
+                <img src="assets/images/service-item-01.png" alt="">
+                <h4>Robust</h4>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="service-item">
+                <img src="assets/images/contact-info-03.png" alt="">
+                <h4>Reliable</h4>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="service-item">
+                <img src="assets/images/contact-info-03.png" alt="">
+                <h4>Up-to-date</h4>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <a href="#" class="main-button-icon">
+                Learn More <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-xs-12">
+        <div class="right-text-content">
+          <p><a rel="nofollow noopener" href="https://templatemo.com/tm-543-breezed" target="_parent">TNJobs Project</a> is provided by Haddad Ahmed . You can  edit and use this for your non-commercial and commercial websites.
+            <br><br>Working, whether paid or unpaid, is good for our health and wellbeing. It contributes to our happiness, helps us to build confidence and self-esteem, and rewards us financially. Because of these benefits, it is important to return to work as soon as possible after an illness or injury.
+            <br><br>This is a Test Website feel free to <a rel="nofollow noopener" href="https://templatemo.com/contact" target="_parent">talk to us</a> if you have anything.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- jQuery -->
+<script src="assets/js/jquery-2.1.0.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Plugins -->
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/scrollreveal.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/imgfix.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/isotope.js"></script>
+
+<!-- Global Init -->
+<script src="assets/js/custom.js"></script>
+
+<script>
+
+    $(function() {
+        var selectedClass = "";
+        $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+            $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+                $("."+selectedClass).fadeIn();
+                $("#portfolio").fadeTo(50, 1);
+            }, 500);
+
+        });
+    });
+
+</script>
+<!-- ***** About Area Ends ***** -->

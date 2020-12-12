@@ -1,0 +1,35 @@
+<div class="page-wrapper p-t-200 p-b-150" style="background-image: url(assets/images/slide-02.jpg) ;">
+  <div class="wrapper wrapper--w100" style="padding: 7rem">
+    <h2 style="background: white">List of Jobs</h2>
+    <table id="customers">
+      <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Email</th>
+      </tr>
+      </thead>
+      <tbody *ngFor="let j of jobList;">
+      <tr style="background: white">
+        <th scope="row">{{j.id}}</th>
+        <td>{{j.name}}</td>
+        <td>{{j.msg}}</td>
+        <td>{{j.mail}}</td>
+        <td> <a [routerLink]="['/home/job/',j.id]" class="btn btn-success">
+          detail
+        </a></td>
+        <td> <a [routerLink]="['/updatejob/'+ j.id]" class="btn btn-warning">
+          Modify
+        </a></td>
+        <td> <a  (click)="deleteJob(j)" class="btn btn-danger">
+          Delete
+        </a></td>
+      </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-outline-light" [routerLink]="['/addjob/']">AddJob</button>
+
+  </div>
+</div>
+

@@ -1,0 +1,40 @@
+<div class="page-wrapper p-t-200 p-b-150" style="background-image: url(assets/images/slide-02.jpg) ;">
+  <div class="wrapper wrapper--w100" style="padding: 7rem">
+    <h2 style="background: white">List of Users</h2>
+    <table id="customers">
+      <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">NameFirst</th>
+        <th scope="col">NameSecond</th>
+        <th scope="col">Email</th>
+        <th scope="col">Sexe</th>
+        <th scope="col">Taille</th>
+        <th scope="">Email</th>
+      </tr>
+      </thead>
+      <tbody *ngFor="let j of usersList;">
+      <tr style="background: white">
+        <th scope="row">{{j.id}}</th>
+        <td>{{j.namef}}</td>
+        <td>{{j.names}}</td>
+        <td>{{j.email}}</td>
+        <td>{{j.sexe}}</td>
+        <td>{{j.type}}</td>
+        <td> <a [routerLink]="['/profil/',j.id]" class="btn btn-success">
+          detail
+        </a></td>
+        <td> <a [routerLink]="['/updatejob/'+ j.id]" class="btn btn-warning">
+          Modify
+        </a></td>
+        <td> <a  (click)="deleteUser(j)" class="btn btn-danger">
+          Delete
+        </a></td>
+      </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-outline-light" [routerLink]="['/subscribe/']">AddUser</button>
+
+  </div>
+</div>
+

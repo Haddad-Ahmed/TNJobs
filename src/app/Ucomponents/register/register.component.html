@@ -1,0 +1,113 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Body ---------->
+
+<body>
+<div class="page-wrapper p-t-100 p-b-50">
+  <div class="container login-container">
+    <div class="row">
+      <div class="col-md-6 login-form-2">
+        <h3>Register</h3>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" >
+          <div class="form-group">
+            <input type="text" class="form-control" formControlName="namef" placeholder="Your First Name *" value=""  [(ngModel)]="user.namef" required />
+          </div>
+          <div class="alert alert-danger" *ngIf="registerForm.get('namef').errors&& registerForm.controls['namef'].touched">
+            <div *ngIf="registerForm.controls['namef'].hasError('required')">
+              The first name is a required !
+            </div>
+            <div *ngIf="registerForm.controls['namef'].hasError('minlength')">
+              the first name minlength is 3
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" formControlName="names" placeholder="Your Second Name *" value=""  [(ngModel)]="user.names" required />
+          </div>
+          <div class="alert alert-danger" *ngIf="registerForm.get('names').errors && registerForm.controls['names'].touched">
+            <div *ngIf="registerForm.controls['names'].hasError('required')">
+              The last name is a required !
+            </div>
+            <div *ngIf="registerForm.controls['names'].hasError('pattern')">
+              Message Pattern
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" formControlName="password" placeholder="Your Password *" value=""  [(ngModel)]="user.password" required />
+          </div>
+          <div class="alert alert-danger" *ngIf="registerForm.get('password').errors && registerForm.controls['password'].touched">
+            <div *ngIf="registerForm.controls['password'].hasError('required')">
+              Password !
+            </div>
+            <div *ngIf="registerForm.controls['password'].hasError('minlength')">
+              Message Pattern
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text"  class="form-control" formControlName="email" placeholder="EX: name.@yy.org" value=""  [(ngModel)]="user.email" required />
+          </div>
+          <div class="alert alert-danger" *ngIf="registerForm.get('email').errors && registerForm.controls['email'].touched">
+            <div *ngIf="registerForm.controls['email'].hasError('required')">
+              Mail !
+            </div>
+            <div *ngIf="registerForm.controls['email'].hasError('pattern')">
+              Message Pattern
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-group">
+              <label class="radio inline">
+                <input type="radio" class="form-control" formControlName="sexe" value="male" [(ngModel)]="user.sexe" required>
+                <span> Male   </span>
+              </label>
+              &nbsp;                         &nbsp;
+              <label class="radio inline">
+                <input type="radio" name="gender" class="form-control" formControlName="sexe" value="female" [(ngModel)]="user.sexe" required>
+                <span> Female </span>
+              </label>
+            </div>
+            <div class="form-group">
+              <div class="form-group">
+                <label class="radio inline">
+                  <input type="radio" name="type"  formControlName="type" value="Employe" [(ngModel)]="user.type" required>
+                  <span> Employe   </span>
+                </label>
+                &nbsp;
+                <label class="radio inline">
+                  <input type="radio" name="type" formControlName="type" value="Hire" [(ngModel)]="user.type" required>
+                  <span> Hire </span>
+                </label>
+              </div>
+              <!--
+              <div class="form-row">
+                <div class="name" style="color: white">Upload Image :&nbsp;&nbsp; </div>
+                <div class="value">
+                  <div class="input-group js-input-file">
+                    <input class="input-file" type="file" name="file_img" id="file">
+                    <label class="label--file" for="file">Choose file</label>
+                    <span class="input-file__info">No file chosen</span>
+                  </div>
+                </div>
+              </div>   -->
+            <div class="form-group">
+              <input type="submit" class="btnSubmit" value="Register" [disabled]="registerForm.invalid" (click)="add()" />
+            </div>
+          <div class="form-group">
+            <a href="#" class="ForgetPwd" value="Login" routerLink="/login">Login ?</a><br>
+          </div>
+              <div class="form-group">
+                <app-auth-button (notify)="onChecked($event)"></app-auth-button><br>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+
+
+
+

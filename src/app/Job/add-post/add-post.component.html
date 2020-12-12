@@ -1,0 +1,91 @@
+<div class="page-wrapper p-t-100 p-b-50" style="background-image: url(assets/images/slide-02.jpg) ;">
+  <div class="wrapper wrapper--w900">
+<div class="card card-6">
+  <div class="card-heading" style="position: center;">
+    <h2 class="title">Apply for a job</h2>
+  </div>
+  <div class="card-body">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="form-row">
+        <div class="name">Full name</div>
+        <div class="value">
+          <input class="input--style-6" type="text"  formControlName="name" placeholder="Full Name *" value=""  [(ngModel)]="post.name" required>
+        </div>
+        <div class="alert alert-danger" *ngIf="registerForm.get('name').errors&& registerForm.controls['name'].touched">
+          <div *ngIf="registerForm.controls['name'].hasError('required')">
+            The name is a required !
+          </div>
+          <div *ngIf="registerForm.controls['name'].hasError('minlength')">
+            the name minlength is 3
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="name">Email address</div>
+        <div class="value">
+          <div class="input-group">
+            <input class="input--style-6" type="text" formControlName="mail" placeholder="EX: name.@yy.org" value=""  [(ngModel)]="post.mail" required>
+          </div>
+        </div>
+        <div class="alert alert-danger" *ngIf="registerForm.get('mail').errors && registerForm.controls['mail'].touched">
+          <div *ngIf="registerForm.controls['mail'].hasError('required')">
+            Mail !
+          </div>
+          <div *ngIf="registerForm.controls['mail'].hasError('pattern')">
+            Mail Form !
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="name">Message</div>
+        <div class="value">
+          <div class="input-group">
+            <label>
+              <textarea class="textarea--style-6"  type="text" formControlName="msg" placeholder="Your msg"  [(ngModel)]="post.msg" required></textarea>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="name">JobID</div>
+        <div class="value">
+          <div class="input-group">
+              <input class="input--style-6"  type="text" formControlName="jobid" placeholder="Your Job ID"  [(ngModel)]="post.jobid" required>
+          </div>
+          <div class="alert alert-danger" *ngIf="registerForm.get('jobid').errors&& registerForm.controls['jobid'].touched">
+            <div *ngIf="registerForm.controls['jobid'].hasError('required')">
+              The name is a required !
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="name">LinkedIn link</div>
+        <div class="value">
+          <div class="input-group">
+            <input class="input--style-6"  type="text" formControlName="link" placeholder="Link"  [(ngModel)]="post.link" required>
+          </div>
+          <div class="alert alert-danger" *ngIf="registerForm.get('link').errors&& registerForm.controls['link'].touched">
+            <div *ngIf="registerForm.controls['link'].hasError('required')">
+              The name is a required !
+            </div>
+          </div>
+        </div>
+      </div>
+      <label class="image-upload-container btn btn-bwm">
+        <span>Select Image</span> CV :
+        <input #imageInput type="file" accept="image/*" (change)="processFile(imageInput)" >
+      </label>
+
+
+
+
+      <div class="card-footer">
+        <button class="btn btn--radius-2 btn--blue-2" type="submit" [disabled]="registerForm.invalid" (click)="add(imageInput)">Send Application</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <!--<link href="toastr.css" rel="stylesheet"/>
+  <script src="toastr.js"></script>       -->
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="page-wrapper p-t-100 p-b-50">
+<div class="container login-container">
+  <div class="row">
+    <div class="col-md-6 login-form-2">
+      <h3>Login</h3>
+      <form [formGroup]="loginForm" >
+        <div class="form-group">
+          <input type="text"  class="form-control" formControlName="email" placeholder="Your Mail *" value=""  [(ngModel)]="user.email" required />
+        </div>
+        <div class="alert alert-danger" *ngIf="loginForm.get('email').errors && loginForm.controls['email'].touched">
+          <div *ngIf="loginForm.controls['email'].hasError('required')">
+            Mail !
+          </div>
+          <div *ngIf="loginForm.controls['email'].hasError('pattern')">
+            Message Pattern
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" formControlName="password" placeholder="Your Password *" value=""  [(ngModel)]="user.password" required />
+        </div>
+        <div class="alert alert-danger" *ngIf="loginForm.get('password').errors && loginForm.controls['password'].touched">
+          <div *ngIf="loginForm.controls['password'].hasError('required')">
+            Password !
+          </div>
+          <div *ngIf="loginForm.controls['password'].hasError('minlength')">
+            Message Pattern
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btnSubmit" value="Login" (click)="login()" />
+        </div>
+        <div class="form-group">
+          <app-auth-button (notify)="onChecked($event)"></app-auth-button><br>
+        </div>
+        <div class="form-group">
+
+          <a href="#" class="ForgetPwd" value="Login">Forget Password?</a><br>
+          <a href="#" class="ForgetPwd" value="Login" routerLink="/register">register now ?</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+</body>

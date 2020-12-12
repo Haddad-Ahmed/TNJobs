@@ -1,9 +1,8 @@
-import { Settings } from 'http2';
-
-export class User {
+export class Job {
+  id: number;
   name: string;
-  email: string;
-  adress: string;
-  hobbies: string;
-  present: boolean;
+  mail: string;
+  msg: string;
+  likes: number;
+  img: string;
 }

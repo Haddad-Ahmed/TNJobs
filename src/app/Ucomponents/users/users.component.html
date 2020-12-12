@@ -1,0 +1,37 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+<div class="page-wrapper p-t-100 p-b-50">
+  <div class="wrapper wrapper--w1500" style="padding: 7rem">
+    <label for="site-search">Search the site:</label>
+    <input type="search" id="site-search" name="searchinput"
+           aria-label="Search through site content" [(ngModel)]="searchinput">
+    <button class="btn-dark" (click)="search()">Search</button>
+    <div class="gallery-menu text-center row">
+      <div class="col-md-12">
+        <div class="button-group filter-button-group">
+          <button class="btn-dark" [class]="actAll"  (click)="all()">All</button>
+          <button class="btn-dark" [class]="actHirer"  (click)="hirer()">Hirer</button>
+          <button class="btn-dark" [class]="actEmploye" (click)="employe()">Employe </button>
+        </div>
+      </div>
+      <br>
+        <table id="customers">
+          <thead>
+          <tr><th>Id</th><th>FirstName</th><th>SecondName</th><th>Email</th><th>Role</th></tr>
+          <tbody  *ngFor="let user of usersList" >
+          <tr style="background: white" *ngIf=" a || (user.type === categ)" >
+            <td>{{user.id}}</td>
+            <td>{{user.namef}}</td>
+            <td>{{user.names}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.type}}</td>
+            <td><button class="btn btn--blue" [routerLink]="['/profil/'+ user.id]">Contact</button></td>
+          </tbody>
+        </table>
+
+</div>
+</div>
+
+
