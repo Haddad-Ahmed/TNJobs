@@ -3,7 +3,7 @@
     {
       "namef": "haddad",
       "names": "ahmed",
-      "password": "3abdou",
+      "password": "4twin4",
       "email": "ahmed.haddad@ieee.org",
       "type": "Hirer",
       "role": "admin",
@@ -48,6 +48,20 @@
       "type": "Employe",
       "img": "../../../assets/images/user.png",
       "id": 5
+    },
+    {
+      "email": "ahmed.haddad@ieee.org",
+      "namef": "Ahmed Haddad",
+      "password": "123",
+      "role": "user",
+      "id": 6
+    },
+    {
+      "email": "ahmedabduelrahmen.haddad@esprit.tn",
+      "namef": "Ahmed AbduelRahmen Haddad",
+      "password": "123",
+      "role": "user",
+      "id": 7
     }
   ],
   "posts": [
